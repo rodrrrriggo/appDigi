@@ -25,20 +25,7 @@
   #container a {
     text-decoration: none;
   }
-
-  .icon-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px 0;
-  }
-
-  .card-imagen{
-    width: 100% auto;
-    height: 200px;
-    object-fit: contain;
-}
-
+  
   ion-icon{
-    font-size: 30px;
+    font-size: 10rem;
   }
