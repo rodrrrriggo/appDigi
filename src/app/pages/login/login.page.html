@@ -1,13 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Iniciar Sesion!</ion-title>
+    <ion-title>Iniciar Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Iniciar Sesion!</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <div id="container">
+    <ion-card>
+      <br />
+      <ion-title>Inicia Sesion en DIGIGAMES</ion-title>
+      <br />
+      <ion-input type="email" label="Correo Electronico" label-placement="floating" fill="outline" placeholder="email@tudominio"
+      ngModel
+      email></ion-input>
+      <br />
+      <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"></ion-input>
+      <br />
+      <ion-button routerLink="/catalogo">ENTRAR</ion-button>
+      <br />
+      <ion-label>
+        <p>¿No tienes cuenta? <a [routerLink]="['/registro']">Registrate</a></p>
+      </ion-label> 
+      <br />
+    </ion-card>
+    </div>
+
+
 </ion-content>

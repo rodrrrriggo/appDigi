@@ -25,3 +25,14 @@
   #container a {
     text-decoration: none;
   }
+
+  .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  ion-icon{
+    font-size: 30px;
+  }

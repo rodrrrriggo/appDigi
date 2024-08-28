@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>𝐑𝐞𝐠𝐢𝐬𝐭𝐫𝐚𝐭𝐞!</ion-title>
+    <ion-title>Registrate</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,17 +8,27 @@
 
 <div id="container">
   <ion-card>
+    <br />
     <ion-title>Registrate en DIGIGAMES</ion-title>
     <br />
     <ion-input label="Nombre de usuario" label-placement="floating" fill="outline" placeholder="Elige un nombre bonito"></ion-input>
     <br />
-    <ion-input type="email" label="Correo Electronico" label-placement="floating" fill="outline" placeholder="email@tudominio"></ion-input>
+    <ion-input  type="email" label="Correo Electronico" label-placement="floating" fill="outline" placeholder="email@tudominio"
+    ngModel
+    email></ion-input>
     <br />
     <ion-input type="number" label="Numero telefonico" label-placement="floating" fill="outline" placeholder="Ej: +56 9"></ion-input>
     <br />
-    <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"></ion-input>
+    <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"
+    [counter]="true"
+    maxlength="8"></ion-input>
     <br />
     <ion-button routerLink="/login">REGISTRAR</ion-button>
+
+    <ion-label>
+      <p>¿Ya tienes cuenta? <a [routerLink]="['/login']">Inicia Sesion</a></p>
+    </ion-label> 
+    <br />
   </ion-card>
   </div>
 </ion-content>
