@@ -3,24 +3,35 @@
           <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
-    <ion-title>Catalogo</ion-title>
+    <ion-title>
+      <img src="assets/img/logo1-negro.png" alt="Logo DIGIGAMES" style="height: 55px;">
+      </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-menu contentId="main-content">
+<!--<ion-menu contentId="main-content">
   <ion-header>
     <ion-toolbar color="warning">
       <ion-title>Menu DIGIGAMES </ion-title>
     </ion-toolbar>
   </ion-header>
   <br />
+  <ion-content color="dark">
   <ion-menu-toggle>
-  <ion-item detail="true" [routerLink]="['/perfil']">
+  <ion-item detail="true" [routerLink]="['/perfil']" color="dark">
       <ion-icon name="person-circle-outline"></ion-icon>
       <ion-label>Tu Perfil</ion-label>
   </ion-item>
+  <ion-item detail="true" [routerLink]="['/perfil']" color="dark">
+    <ion-icon name="help"></ion-icon>
+    <ion-label>Preguntas Frecuentes</ion-label>
+</ion-item>
+<ion-item detail="true" [routerLink]="['/perfil']" color="dark">
+  <ion-icon name="glasses"></ion-icon>
+  <ion-label>Quienes somos</ion-label>
+</ion-item>
 </ion-menu-toggle>
-  <ion-content class="ion-padding">Contenido.</ion-content>
+  </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
@@ -32,19 +43,19 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
-</div>
+</div> -->
 
 
 
 <ion-content [fullscreen]="true">
-  <ion-content padding class="background">
+  <ion-content padding class="background" color="dark">
   
   <ion-row>
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="#" src="assets/img/black myth.jpg" />
     <ion-card-header>
       <ion-card-title>Black Myth: Wukong</ion-card-title>
-      <ion-card-subtitle>20,999</ion-card-subtitle>
+      <ion-card-subtitle>39.999</ion-card-subtitle>
       
     </ion-card-header>
     <ion-button>Comprar</ion-button>
@@ -55,11 +66,11 @@
       </div>
   </ion-card>
 
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/elden.jpg" />
     <ion-card-header>
       <ion-card-title>Elden Ring</ion-card-title>
-      <ion-card-subtitle>19,999</ion-card-subtitle>
+      <ion-card-subtitle>35.000</ion-card-subtitle>
       
     </ion-card-header>
   
@@ -72,11 +83,11 @@
     </div>
   </ion-card>
 
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/cod bo6.jpg" />
     <ion-card-header>
       <ion-card-title>COD: Black Ops 6</ion-card-title>
-      <ion-card-subtitle>19,999</ion-card-subtitle>
+      <ion-card-subtitle>64.000</ion-card-subtitle>
     </ion-card-header>
   
     <ion-button>Pre-Comprar</ion-button>
@@ -88,11 +99,11 @@
     </div>
   </ion-card>
 
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/gta5.jpg" />
     <ion-card-header>
       <ion-card-title>Grand Theft Auto 5</ion-card-title>
-      <ion-card-subtitle>19,999</ion-card-subtitle>
+      <ion-card-subtitle>13.500</ion-card-subtitle>
     </ion-card-header>
   
     <ion-button>Comprar</ion-button>
@@ -104,11 +115,11 @@
     </div>
   </ion-card>
 
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/eafc.jpg" />
     <ion-card-header>
       <ion-card-title>EAFC 25</ion-card-title>
-      <ion-card-subtitle>19,999</ion-card-subtitle>
+      <ion-card-subtitle>59.990</ion-card-subtitle>
     </ion-card-header>
   
     
@@ -121,11 +132,11 @@
     </div>
   </ion-card>
 
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/f124.jpg" />
     <ion-card-header>
-      <ion-card-title>F1 24</ion-card-title>
-      <ion-card-subtitle>19,999</ion-card-subtitle>
+      <ion-card-title>F1 24: Champions Edition</ion-card-title>
+      <ion-card-subtitle>40.000</ion-card-subtitle>
     </ion-card-header>
   
     
@@ -140,11 +151,11 @@
     
   </ion-card>
 
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/reddead.jpg" />
     <ion-card-header>
       <ion-card-title>Red Dead Redemption 2</ion-card-title>
-      <ion-card-subtitle>19,999</ion-card-subtitle>
+      <ion-card-subtitle>19.999</ion-card-subtitle>
     </ion-card-header>
   
     
@@ -157,11 +168,11 @@
     </div>
   </ion-card>
 
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/concord.jpg" />
     <ion-card-header>
       <ion-card-title>Concord</ion-card-title>
-      <ion-card-subtitle>19,999</ion-card-subtitle>
+      <ion-card-subtitle>28.000</ion-card-subtitle>
     </ion-card-header>
   
     
@@ -175,11 +186,11 @@
     
   </ion-card>
 
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/gta4.jpg" />
     <ion-card-header>
       <ion-card-title>GTA 4: Episodes From Liberty City</ion-card-title>
-      <ion-card-subtitle>19,999</ion-card-subtitle>
+      <ion-card-subtitle>15.000</ion-card-subtitle>
     </ion-card-header>
   
     
@@ -192,11 +203,11 @@
     
   </ion-card>
 
-  <ion-card class="card1">
+  <ion-card class="card1" color="dark">
     <ion-img class="card-imagen" alt="Silhouette of mountains" src="assets/img/morales.jpg" />
     <ion-card-header>
       <ion-card-title>Spider-man: Miles Morales</ion-card-title>
-      <ion-card-subtitle>19,999</ion-card-subtitle>
+      <ion-card-subtitle>33.495</ion-card-subtitle>
     </ion-card-header>
   
     
@@ -217,20 +228,19 @@
 
 
 <ion-footer [translucent]="true">
-
-  
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home">
-        <ion-icon name="play-circle"></ion-icon>
-        Los Mas Jugados
+    
+    <ion-tab-bar color="warning" slot="bottom">
+      <ion-tab-button tab="home" [routerLink]="['/perfil']" >
+        <ion-icon name="person-circle-outline"></ion-icon>
+        Tu Perfil
       </ion-tab-button>
-      <ion-tab-button tab="library">
-        <ion-icon name="library"></ion-icon>
-        Comprados
+      <ion-tab-button tab="library" [routerLink]="['/perfil']">
+        <ion-icon name="help"></ion-icon>
+        Preguntas
       </ion-tab-button>
-      <ion-tab-button tab="search">
-        <ion-icon name="search"></ion-icon>
-        Buscar
+      <ion-tab-button tab="search" [routerLink]="['/perfil']">
+        <ion-icon name="happy-sharp"></ion-icon>
+        Quienes Somos
       </ion-tab-button>
     </ion-tab-bar>
 

@@ -1,13 +1,10 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Iniciar Sesion</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
+
+<ion-content [fullscreen]="true" color="dark">
   
   <div id="container">
-    <ion-card>
+    <img src="assets/img/logo1.png" alt="Logo DIGIGAMES" style="height: 120px; vertical-align: middle;">
+    <ion-card color="warning">
       <br />
       <ion-title>Inicia Sesion en DIGIGAMES</ion-title>
       <br />
@@ -20,7 +17,7 @@
       <ion-button routerLink="/catalogo">ENTRAR</ion-button>
       <br />
       <ion-label>
-        <p>¿No tienes cuenta? <a [routerLink]="['/registro']">Registrate</a></p>
+        <p>¿Nuevo en DIGIGAMES? <a [routerLink]="['/registro']">Registrate</a></p>
       </ion-label> 
       <br />
     </ion-card>
