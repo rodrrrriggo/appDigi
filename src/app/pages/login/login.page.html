@@ -16,10 +16,10 @@
       [counter]="true"
       maxlength="8"></ion-input>
       <br />
-      <ion-button routerLink="/catalogo">ENTRAR</ion-button>
+      <ion-button routerLink="/catalogo" (click)="presentAlert()">ENTRAR</ion-button>
       <br />
       <ion-label>
-        <p>¿Nuevo en DIGIGAMES? <a [routerLink]="['/registro']">Registrate</a></p>
+        <p>¿Nuevo en DIGIGAMES? <a [routerLink]="['/registro']" >Registrate</a></p>
       </ion-label> 
       <br />
     </ion-card>
@@ -27,3 +27,5 @@
 
 
 </ion-content>
+
+

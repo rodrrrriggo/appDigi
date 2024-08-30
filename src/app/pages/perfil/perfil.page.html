@@ -1,11 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="warning">
-    <ion-buttons slot="start">
-      <ion-back-button default-href="'/catalogo'"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Tu Perfil</ion-title>
+          <ion-buttons slot="start">
+            <ion-back-button default-href="'/catalogo'"></ion-back-button>
+          </ion-buttons>
+    <ion-title>
+      <img src="assets/img/logo1-negro.png" alt="Logo DIGIGAMES" style="height: 55px; margin-right: 50px;">
+      </ion-title>
   </ion-toolbar>
-  
 </ion-header>
 
 <ion-content [fullscreen]="true" color="dark">
@@ -31,8 +32,14 @@
       <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Confirma tu contraseña"
       [counter]="true"
       maxlength="8"></ion-input>
-      <ion-button routerLink="/catalogo">Actualizar</ion-button>
+      <ion-button routerLink="/catalogo" (click)="presentAlert()">Actualizar</ion-button>
       <br />
     </ion-card>
     </div>
 </ion-content>
+
+<ion-footer translucent="true">
+  <ion-tab-bar color="warning" slot="bottom">
+    
+  </ion-tab-bar>
+</ion-footer>

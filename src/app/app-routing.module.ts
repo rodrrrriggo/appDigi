@@ -18,7 +18,8 @@ const routes: Routes = [
   {
     path: 'registro',
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
-  },  {
+  },
+  {
     path: 'catalogo',
     loadChildren: () => import('./pages/catalogo/catalogo.module').then( m => m.CatalogoPageModule)
   },
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'preguntas',
     loadChildren: () => import('./pages/preguntas/preguntas.module').then( m => m.PreguntasPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
 
 ];

@@ -18,7 +18,7 @@
     [counter]="true"
     maxlength="8"></ion-input>
     <br />
-    <ion-button routerLink="/login">REGISTRAR</ion-button>
+    <ion-button routerLink="/login" (click)="presentAlert()">REGISTRAR</ion-button>
 
     <ion-label>
       <p>¿Ya tienes cuenta? <a [routerLink]="['/login']">Inicia Sesion</a></p>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-perfil',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilPage implements OnInit {
 
-  constructor() { }
-
   ngOnInit() {
   }
+  constructor(private alertController: AlertController) {}
 
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'DIGIGAMES DICE:',
+      message: 'Perfil actualizado con exito!',
+      buttons: ['Continuar'],
+    });
+
+    await alert.present();
+  }
 }
