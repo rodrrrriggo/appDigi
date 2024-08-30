@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private alertController: AlertController) {}
+
+  ngOnInit() {}
+
+  // Primera alerta
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'DIGIGAMES DICE:',
+      message: 'Sesión cerrada con éxito!',
+      buttons: ['Vuelve Pronto'],
+    });
+
+    await alert.present();
+  }
 }

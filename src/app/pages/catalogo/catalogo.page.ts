@@ -27,7 +27,7 @@ export class CatalogoPage implements OnInit {
   async presentAnotherAlert() {
     const alert = await this.alertController.create({
       header: 'DIGIGAMES DICE:',
-      message: 'Juego comprado con exito. Gracias por preferir DIGIGAMES!',
+      message: 'Juego agregado con exito; Revisa tu carrito!',
       buttons: ['Continuar'],
     });
 
