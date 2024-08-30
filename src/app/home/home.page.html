@@ -2,9 +2,11 @@
 <ion-content [fullscreen]="true" color="dark">
   
   
-  
+
+<p>Version 1.0.0</p>  
+
   <div id="container">
     <img src="assets/img/logo1.png" alt="Logo DIGIGAMES" style="height: 120px; vertical-align: middle;">
-    <ion-button routerLink="/login" color="warning">Comenzar</ion-button>
+    <ion-button routerLink="/login" color="warning" (click)="presentAlert()">Comenzar</ion-button>
   </div>
 </ion-content>

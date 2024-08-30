@@ -1,10 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="warning">  
           <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
+            <ion-button [routerLink]="'/home'"><mat-icon>home</mat-icon></ion-button>
           </ion-buttons>
     <ion-title>
-      <img src="assets/img/logo1-negro.png" alt="Logo DIGIGAMES" style="height: 55px;">
+      <img src="assets/img/logo1-negro.png" alt="Logo DIGIGAMES" style="height: 55px; margin-right: 50px;">
       </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -234,13 +234,9 @@
         <ion-icon name="person-circle-outline"></ion-icon>
         Tu Perfil
       </ion-tab-button>
-      <ion-tab-button tab="library" [routerLink]="['/perfil']">
+      <ion-tab-button tab="library" [routerLink]="['/preguntas']">
         <ion-icon name="help"></ion-icon>
         Preguntas
-      </ion-tab-button>
-      <ion-tab-button tab="search" [routerLink]="['/perfil']">
-        <ion-icon name="happy-sharp"></ion-icon>
-        Quienes Somos
       </ion-tab-button>
     </ion-tab-bar>
 

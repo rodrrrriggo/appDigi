@@ -12,7 +12,9 @@
       ngModel
       email></ion-input>
       <br />
-      <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"></ion-input>
+      <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"
+      [counter]="true"
+      maxlength="8"></ion-input>
       <br />
       <ion-button routerLink="/catalogo">ENTRAR</ion-button>
       <br />

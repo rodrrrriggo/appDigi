@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private alertController: AlertController) {}
 
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'DIGIGAMES DICE:',
+      subHeader: 'Lee con atención:',
+      message: 'Al unirte a nosotros te damos el respalo, la seguridad y el compromiso de tu cuenta. Esperamos verte seguido!',
+      buttons: ['Comienza tu aventura'],
+    });
+
+    await alert.present();
+  }
 }
+  
+

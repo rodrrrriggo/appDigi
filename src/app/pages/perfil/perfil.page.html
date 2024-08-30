@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="warning">
     <ion-buttons slot="start">
-      <ion-back-button default-href="#"></ion-back-button>
+      <ion-back-button default-href="'/catalogo'"></ion-back-button>
     </ion-buttons>
     <ion-title>Tu Perfil</ion-title>
   </ion-toolbar>
@@ -11,9 +11,28 @@
 <ion-content [fullscreen]="true" color="dark">
   
   <div id="container">
-    <ion-card>
-  <ion-icon name="person-circle-outline"></ion-icon>
-  <ion-title>Bienvenido</ion-title>
-</ion-card>
-</div>
+    <ion-icon name="person"></ion-icon>
+    <ion-card color="warning">
+      <br />
+      <ion-title>Bienvenido/a: </ion-title>
+      <br />
+      <p>Modifica tu perfil aqui abajo</p>
+      <br />
+      <ion-input label="Nombre de usuario" label-placement="floating" fill="outline" placeholder="Elige un nombre bonito"></ion-input>
+      <br />
+      <ion-input type="email" label="Correo Electronico" label-placement="floating" fill="outline" placeholder="email@tudominio"
+      ngModel
+      email></ion-input>
+      <br />
+      <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"
+      [counter]="true"
+      maxlength="8"></ion-input>
+      <br />
+      <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Confirma tu contraseña"
+      [counter]="true"
+      maxlength="8"></ion-input>
+      <ion-button routerLink="/catalogo">Actualizar</ion-button>
+      <br />
+    </ion-card>
+    </div>
 </ion-content>
