@@ -11,13 +11,13 @@
     <ion-content color="dark">
       <ion-list>
         <ion-menu-toggle>
-          <ion-item detail="true" [routerLink]="['/preguntas']" >
+          <ion-item color="warning" detail="true" [routerLink]="['/preguntas']" >
             <mat-icon>help</mat-icon>
             <ion-label>Preguntas Frecuentes</ion-label>
           </ion-item>
         </ion-menu-toggle>
         <ion-menu-toggle>
-          <ion-item detail="true" [routerLink]="['/login']" (click)="presentAlert()">
+          <ion-item color="warning" detail="true" [routerLink]="['/login']" (click)="presentAlert()">
             <mat-icon>logout</mat-icon>
             <ion-label>Salir</ion-label>
           </ion-item>
