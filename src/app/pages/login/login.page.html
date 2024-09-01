@@ -9,14 +9,13 @@
       <ion-title>Inicia Sesion en DIGIGAMES</ion-title>
       <br />
       <ion-input type="email" label="Correo Electronico" label-placement="floating" fill="outline" placeholder="email@tudominio"
-      ngModel
-      email></ion-input>
+      [(ngModel)]="correo"></ion-input>
       <br />
       <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"
       [counter]="true"
-      maxlength="8"></ion-input>
+      maxlength="8" [(ngModel)]="contrasena"></ion-input>
       <br />
-      <ion-button routerLink="/catalogo" (click)="presentAlert()">ENTRAR</ion-button>
+      <ion-button (click)="ingresoUsuarios()">ENTRAR</ion-button>
       <br />
       <ion-label>
         <p>¿Nuevo en DIGIGAMES? <a [routerLink]="['/registro']" >Registrate</a></p>

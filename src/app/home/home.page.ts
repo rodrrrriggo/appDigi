@@ -13,9 +13,8 @@ export class HomePage {
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'DIGIGAMES DICE:',
-      subHeader: 'Lee con atención:',
-      message: 'Al unirte a nosotros te damos el respaldo, la seguridad y el compromiso de tu cuenta. Esperamos verte seguido!',
-      buttons: ['Comienza tu aventura'],
+      message: 'Bienvenido',
+      buttons: ['Comenzar'],
     });
 
     await alert.present();

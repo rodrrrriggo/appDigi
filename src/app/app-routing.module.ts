@@ -36,9 +36,19 @@ const routes: Routes = [
     loadChildren: () => import('./pages/carrito/carrito.module').then( m => m.CarritoPageModule)
   },
   {
+    path: 'vistarol',
+    loadChildren: () => import('./pages/vistarol/vistarol.module').then( m => m.VistarolPageModule)
+  },
+  {
+    path: 'vistaadmin',
+    loadChildren: () => import('./pages/vistaadmin/vistaadmin.module').then( m => m.VistaadminPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
+  
+  
   
 
 

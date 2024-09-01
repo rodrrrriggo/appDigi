@@ -6,19 +6,18 @@
     <ion-title>
       Registrate en DIGIGAMES</ion-title>
     <br />
-    <ion-input label="Nombre de usuario" label-placement="floating" fill="outline" placeholder="Elige un nombre bonito"></ion-input>
+    <ion-input label="Nombre de usuario" label-placement="floating" fill="outline" placeholder="Elige un nombre bonito"[(ngModel)]="nombre"></ion-input>
     <br />
     <ion-input  type="email" label="Correo Electronico" label-placement="floating" fill="outline" placeholder="email@tudominio"
-    ngModel
-    email></ion-input>
+    [(ngModel)]="correo"></ion-input>
     <br />
-    <ion-input type="number" label="Numero telefonico" label-placement="floating" fill="outline" placeholder="Ej: +56 9"></ion-input>
+    <ion-input type="number" label="Numero telefonico" label-placement="floating" fill="outline" placeholder="Ej: +56 9"[(ngModel)]="numero"></ion-input>
     <br />
     <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"
     [counter]="true"
-    maxlength="8"></ion-input>
+    maxlength="8" [(ngModel)]="contrasena"></ion-input>
     <br />
-    <ion-button routerLink="/login" (click)="presentAlert()">REGISTRAR</ion-button>
+    <ion-button (click)="ingresoUsuarios()">REGISTRAR</ion-button>
 
     <ion-label>
       <p>¿Ya tienes cuenta? <a [routerLink]="['/login']">Inicia Sesion</a></p>
