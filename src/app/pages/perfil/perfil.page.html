@@ -19,20 +19,17 @@
       <br />
       <p>Modifica tu perfil aqui abajo</p>
       <br />
-      <ion-input label="Nombre de usuario" label-placement="floating" fill="outline" placeholder="Elige un nombre bonito"></ion-input>
+      <ion-input label="Nombre de usuario" label-placement="floating" fill="outline" placeholder="Elige un nombre bonito" [(ngModel)]="nombre"></ion-input>
       <br />
       <ion-input type="email" label="Correo Electronico" label-placement="floating" fill="outline" placeholder="email@tudominio"
       ngModel
-      email></ion-input>
+      email [(ngModel)]="correo"></ion-input>
       <br />
       <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"
       [counter]="true"
-      maxlength="8"></ion-input>
+      maxlength="8" [(ngModel)]="contrasena"></ion-input>
       <br />
-      <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Confirma tu contraseña"
-      [counter]="true"
-      maxlength="8"></ion-input>
-      <ion-button routerLink="/catalogo" (click)="presentAlert()">Actualizar</ion-button>
+      <ion-button (click)="ingresoUsuarios()">MODIFICAR</ion-button>
       <br />
     </ion-card>
     </div>
