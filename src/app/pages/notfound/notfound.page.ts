@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-notfound',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotfoundPage implements OnInit {
 
-  constructor() { }
+  constructor(private alertController: AlertController) { }
 
   ngOnInit() {
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'DIGIGAMES DICE:',
+      message: 'Bienvenido nuevamente',
+      buttons: ['Comenzar'],
+    });
+
+    await alert.present();
   }
 
 }
