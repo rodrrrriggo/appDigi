@@ -12,7 +12,6 @@ export class CatalogoPage implements OnInit {
 
   ngOnInit() {}
 
-  // Primera alerta
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'DIGIGAMES DICE:',
@@ -23,7 +22,6 @@ export class CatalogoPage implements OnInit {
     await alert.present();
   }
 
-  // Segunda alerta
   async presentAnotherAlert() {
     const alert = await this.alertController.create({
       header: 'DIGIGAMES DICE:',
