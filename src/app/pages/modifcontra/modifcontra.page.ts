@@ -28,12 +28,17 @@ export class ModifcontraPage implements OnInit {
 
   async modifcontrasena() {
     if (this.correo === "") {
-      await this.presentToast('middle', 'Proporciona un correo valido.');
+      await this.presentToast('middle', 'Campo vacio.');
       return;
-    } else {
-      await this.presentAlert();
-      this.router.navigate(['/login']);
     }
+
+    if (!this.correo.includes("@")) {
+      await this.presentToast('middle', 'Por favor, ingresa un correo electrónico válido.');
+      return;
+    }
+      
+    await this.presentAlert();
+    this.router.navigate(['/login']);
   }
 
   async presentToast(position: 'middle', texto: string) {
@@ -42,8 +47,9 @@ export class ModifcontraPage implements OnInit {
       message: texto,
       duration: 2000,
     });
-  
+
     await toast.present();
   }
 
 }
+
