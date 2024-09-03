@@ -22,4 +22,17 @@ export class VistaadminPage implements OnInit {
 
     await alert.present();
   }
+
+  async presentAnotherAlert() {
+    const alert = await this.alertController.create({
+      header: 'DIGIGAMES DICE:',
+      message: 'Juego Editado/Eliminado',
+      buttons: ['Continuar'],
+    });
+
+    await alert.present();
+  }
 }
+
+
+
