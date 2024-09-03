@@ -34,11 +34,13 @@ export class PerfilPage implements OnInit {
       await this.presentToast('middle', 'Faltan campos por modificar!');
       return;
     }
+    
 
     if (this.contrasena !== this.confirmarContrasena) {
       await this.presentToast('middle', 'Las contraseñas no coinciden.');
       return;
     }
+
 
     const nombreValido = /^[a-zA-Z ]+$/.test(this.nombre);
     if (!nombreValido) {

@@ -31,12 +31,16 @@ async ingresoUsuarios() {
   if (this.correo === "" || this.contrasena === "") {
     await this.presentToast('middle', 'Ups!, te faltan campos por completar.');
     return;
-  } else {
-    await this.presentAlert();
-    this.router.navigate(['/catalogo']);
   }
-}
 
+  if (!this.correo.includes("@")) {
+    await this.presentToast('middle', 'Por favor, ingresa un correo electrónico válido.');
+    return;
+  }
+    
+  await this.presentAlert();
+  this.router.navigate(['/catalogo']);
+}
 async presentToast(position: 'middle', texto: string) {
   const toast = await this.toastController.create({
     position: position,
