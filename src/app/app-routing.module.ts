@@ -44,9 +44,15 @@ const routes: Routes = [
     loadChildren: () => import('./pages/vistaadmin/vistaadmin.module').then( m => m.VistaadminPageModule)
   },
   {
+    path: 'modifcontra',
+    loadChildren: () => import('./pages/modifcontra/modifcontra.module').then( m => m.ModifcontraPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
+  
+
   
   
   

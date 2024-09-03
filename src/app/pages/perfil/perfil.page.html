@@ -25,9 +25,14 @@
       ngModel
       email [(ngModel)]="correo"></ion-input>
       <br />
+      <p>Confirma tus cambios</p>
       <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"
       [counter]="true"
       maxlength="8" [(ngModel)]="contrasena"></ion-input>
+      <br />
+      <ion-input type="password" label="Confirmar Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"
+      [counter]="true"
+      maxlength="8" [(ngModel)]="confirmarContrasena"></ion-input>
       <br />
       <ion-button (click)="ingresoUsuarios()">MODIFICAR</ion-button>
       <br />

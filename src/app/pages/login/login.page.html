@@ -14,11 +14,14 @@
       <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Ingresa tu contraseña"
       [counter]="true"
       maxlength="8" [(ngModel)]="contrasena"></ion-input>
-      <br />
       <ion-button (click)="ingresoUsuarios()">ENTRAR</ion-button>
       <br />
       <ion-label>
-        <p>¿Nuevo en DIGIGAMES? <a [routerLink]="['/registro']" >Registrate</a></p>
+        <p>Olvide mi contraseña. <a [routerLink]="['/modifcontra']" >Recuperar contraseña</a></p>
+      </ion-label> 
+      <br />
+      <ion-label>
+        <p>¿Nuevo en DIGIGAMES?, unete ya mismo!. <a [routerLink]="['/registro']" >Registrate</a></p>
       </ion-label> 
       <br />
     </ion-card>

@@ -12,6 +12,7 @@ export class RegistroPage implements OnInit {
   correo: string = "";
   numero: string = "";
   contrasena: string = "";
+  confirmarContrasena: string = "";
 
   constructor(
     public alertController: AlertController, private toastController: ToastController, private router: Router) {}
@@ -30,15 +31,26 @@ export class RegistroPage implements OnInit {
 
   async ingresoUsuarios() {
     if (this.nombre === "" || this.correo === "" || this.numero === "" || this.contrasena === "") {
-      await this.presentToast('middle', 'Si quieres unirte a DIGIGAMES, Completa todos los campos!.');
+      await this.presentToast('middle', 'Si quieres unirte a DIGIGAMES, completa todos los campos.');
       return;
-    } else {
-      await this.presentAlert();
-      this.router.navigate(['/login']);
     }
+
+    if (this.contrasena !== this.confirmarContrasena) {
+      await this.presentToast('middle', 'Las contraseñas no coinciden.');
+      return;
+    }
+
+    const nombreValido = /^[a-zA-Z ]+$/.test(this.nombre);
+    if (!nombreValido) {
+      await this.presentToast('middle', 'El nombre no puede contener números.');
+      return;
+    }
+
+    await this.presentAlert();
+    this.router.navigate(['/login']);
   }
 
-  async presentToast(position: 'middle', texto: string) {
+    async presentToast(position: 'middle', texto: string) {
     const toast = await this.toastController.create({
       position: position,
       message: texto,
@@ -48,4 +60,3 @@ export class RegistroPage implements OnInit {
     await toast.present();
   }
 }
-
