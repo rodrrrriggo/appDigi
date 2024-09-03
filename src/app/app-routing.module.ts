@@ -48,9 +48,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/modifcontra/modifcontra.module').then( m => m.ModifcontraPageModule)
   },
   {
+    path: 'agregarjuego',
+    loadChildren: () => import('./pages/agregarjuego/agregarjuego.module').then( m => m.AgregarjuegoPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
+  
   
 
   
